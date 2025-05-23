@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Xe Điện - Giới Thiệu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background 0.5s, color 0.5s;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #00aa00;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 20px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .dark {
+      background-color: #111;
+      color: #eee;
+    }
+
+    .dark .btn {
+      background-color: #eee;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chào mừng đến với Xe Điện Của Viết Nam </h1>
+  <p>Xe điện xanh - tiết kiệm - bảo vệ môi trường!</p>
+  <img src="https://i.imgur.com/s7gU7WY.jpeg" alt="Xe điện" />
+  <br />
+  <button class="btn" onclick="toggleMode()">Chuyển chế độ sáng / tối</button>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
